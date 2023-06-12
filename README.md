@@ -1,9 +1,10 @@
-# Fabric Example Mod
+# Server Controls
+Server Controls adds gamerules for operators to edit certain `server.properties` configurations on the fly.
 
-## Setup
+### Currently supported options:
+- Simulation Distance
+- View Distance
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+### Commands
+- `/gamerule sc.simulationDistance`: edit the server's simulation distance.
+- `/gamerule sc.viewDistance`: edit the server's view/render distance.
