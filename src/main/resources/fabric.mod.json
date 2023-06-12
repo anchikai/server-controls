@@ -1,37 +1,34 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "sc",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Server Controls",
+	"description": "Server Controls adds gamerules for operators to edit certain server.properties configurations on the fly.",
 	"authors": [
-		"Me!"
+		"anchikai."
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/server-controls",
+		"sources": "https://github.com/anchikai/server-controls"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"license": "MIT",
+	"icon": "assets/sc/icon.png",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+		],
+		"server": [
+			"net.anchikai.ServerControls"
 		],
 		"client": [
-			"com.example.ExampleModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"sc.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": ">=1.20-rc.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
